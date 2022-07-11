@@ -1,7 +1,7 @@
 ---
 title:  "Terraform With Docker"
 date:   2019-10-26 09:00:00
-permalink: automate-mysql-secure-installation-using-bash
+permalink: terraform-with-docker
 ---
 
 # Terraform With Docker
