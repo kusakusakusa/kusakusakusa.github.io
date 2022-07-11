@@ -1,4 +1,4 @@
-# Automate mysql_secure_installation Using Bash
+## Automate mysql_secure_installation Using Bash
 
 This is a documentation on running a script to install mysql on a Ubuntu 18.04 server, specifically using the AWS EC2 image.
 
