@@ -10,9 +10,9 @@ In a recent project that I am working on, I found a particular need for adding i
 
 ## Project Specifics
 
-The tagging gem that I am using is, contrary to the more popular and senior `ActsAsTaggableOn` gem, the `Gutentag` gem.
+The tagging gem that I am using is, contrary to the more popular and senior [`ActsAsTaggableOn`](https://github.com/mbleigh/acts-as-taggable-on) gem, the [`Gutentag`](https://github.com/pat/gutentag) gem.
 
-The reason I use the latter instead of the former is because the former does not support the new `ActiveRecord` 6 when I was working on the project. It returns erroneous results and throws error due to deprecated `ActiveModel` method in its normal usage for example.
+The reason I use the latter instead of the former is because the former does not support the new `ActiveRecord` 6 when I was working on the project. It returns [erroneous results](https://github.com/mbleigh/acts-as-taggable-on/issues/936) and throws error [due to deprecated `ActiveModel` method](https://github.com/mbleigh/acts-as-taggable-on/issues/955) in its normal usage for example.
 
 The alternative I found is `Gutentag`. It support `Rails 6` and the contributors are actively resolving issues, keeping its issues count at 0 at the time of writing. I found it reliable and it does its main job well, which is to provide the tagging module.
 
@@ -62,7 +62,7 @@ module Extensions
 end
 ```
 
-I modified it slightly with the use of `ActiveSupport::Concern` to do it the `Rails 6` way. This helps to resolve module dependencies gracefully.
+I modified it slightly with the use of [`ActiveSupport::Concern` to do it the `Rails 6` way](https://api.rubyonrails.org/classes/ActiveSupport/Concern.html). This helps to resolve module dependencies gracefully.
 
 In this extension, I attached an image to the module using `ActiveStorage`‘s `has_one_attached` class method, which will ultimately be applied to the `Gutentag::Tag` model.
 
@@ -99,7 +99,7 @@ Here is why.
 
 As we are going to involve the `ActiveRecord` and `ActiveSupport` railities, which have not been initialized yet during the default rails initialization phase, we need to ensure we run the code after they have been loaded.
 
-Rails has 5 initialization events. The first initialization event to fire off after all railities are loaded is `to_prepare`, hence we define the code after that happens inside its block.
+[Rails has 5 initialization events](https://guides.rubyonrails.org/configuring.html#initialization-events). The first initialization event to fire off after all railities are loaded is `to_prepare`, hence we define the code after that happens inside its block.
 
 Since we are interacting with a `ActiveRecord` model, during the initialization phase, it is possible that the table has not been created. In other words, the Gutentag tables migration has not been executed, resulting in errors about the table not existing. An if conditional check is done to prevent this error.
 
