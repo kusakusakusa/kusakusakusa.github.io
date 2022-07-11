@@ -13,4 +13,4 @@ While installation of mysql packages using bash is straight forward, it is not t
 
 Instead of finding out how to automate giving those feedback inputs, it might be easier to run the commands that run after we give our feedback inputs. First, we need to understand what the mysql_secure_installation script is actually doing.
 
-![The Script](/docs/assets/automate-mysql-secure-installation-using-bash_script.png)
+
