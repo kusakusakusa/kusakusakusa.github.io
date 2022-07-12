@@ -1,7 +1,7 @@
 ---
 title:  "How To Use HTML Validation On Flatpickr"
 date:   2020-04-29 09:00:00
-permalink: how-to-ssh-into-private-servers-via-a-bastion-without-copying-ssh-keys
+permalink: how-to-use-html-validation-on-flatpickr
 ---
 
 My go to date picker JavaScript library is [flatpickr](https://flatpickr.js.org/). It has a decent UI that can be customized easily, is lightweight, and is straight forward to implement. There is one particular flaw that I seek to address in this article, that is integrating it with the basic HTML validation.
