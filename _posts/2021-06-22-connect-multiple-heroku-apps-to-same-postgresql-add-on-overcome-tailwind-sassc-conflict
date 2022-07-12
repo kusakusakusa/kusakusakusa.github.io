@@ -1,0 +1,30 @@
+---
+title:  "Connect Multiple Heroku Apps To Same Postgresql Add-on & Overcome Tailwind SASSC Conflict"
+date:   2021-06-22 09:00:00
+permalink: connect-multiple-heroku-apps-to-same-postgresql-add-on-overcome-tailwind-sassc-conflict
+---
+
+Tailwind css has a conflict with sassc gem, as stated in the [README file of their github repository](https://github.com/rails/tailwindcss-rails#conflict-with-sassc-rails).
+
+This is a problem for my application because I’m using [rails admin](https://github.com/railsadminteam/rails_admin) for my admin panel, and it needs sassc to compile its assets.
+
+This conundrum between tailwind css and other gems that need the usual rails way of compiling assets can be solved by setting up 2 heroku apps that talks to the same database. Here is how with postgresql.
+
+First, deploy the main heroku app. This automatically adds the [heroku-postgresql add-on](https://devcenter.heroku.com/articles/heroku-postgresql).
+
+Second, setup a new environment called admin for example. Here are the list of things to prepare for this new environment.
+
+- Create new config/environments/admin.rb file. Copy the content of config/environments/production.rb into it (this depends on your needs)
+- Install rails_admin gem under the admin group like group :admin do. Do the necessary installation for rails_admin
+- Mount rails_admin route under admin environment only, like mount RailsAdmin::Engine => '/', as: 'rails_admin' if Rails.env.admin?
+
+Third, create a new heroku app. This creates it’s copy of postgresql addon. Remove it by heroku addons:remove admin-postgresql-addon-name. The name of the add on can be found in heroku dashboard under Overview > Installed add-ons
+
+Fourth, attach the postgresql addon of your main app with heroku addons:attach main-postgresql-addon-name
+
+Fifth, change the configs as such heroku config:set RAILS_ENV=admin && heroku config:set RACK_ENV=admin
+
+Lastly, deploy your admin application! 🎉🎉
+
+PS. I might not have all the steps recorded here, but if there’s any new error, it should be fairly straightforward to solve!
+
