@@ -1,6 +1,6 @@
 ---
 title:  "How To Use HTML Validation On Flatpickr"
-date:   2020-04-29 09:00:00
+date:   2020-07-21 09:00:00
 permalink: natural-sorting-with-datatables
 ---
 
