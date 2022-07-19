@@ -30,3 +30,4 @@ Here is a glossary of the "more professional" words mapped to how I was saying i
 | Rolling update deployment | Deploy without downtime |
 | Leverage on | Make use of |
 | Simultaneously/asynchonously | At the same time |
+| IO bound | Need to wait for operations like HTTP request, database calls etc. |
