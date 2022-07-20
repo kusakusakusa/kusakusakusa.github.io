@@ -20,8 +20,6 @@ The key thing here is not about winning discussions. The key thing here is about
 
 Here is a glossary of the "more professional" words mapped to how I was saying it.
 
----
-
 | Words | How I was saying it |
 |-------|---------|
 | Nomenclature | How you name your [variables, methods, etc.] |
