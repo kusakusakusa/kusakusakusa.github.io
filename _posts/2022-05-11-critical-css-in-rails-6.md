@@ -1,6 +1,6 @@
 ---
 title:  "Critical CSS in Rails 6"
-date:   2021-05-11 09:00:00
+date:   2022-05-11 09:00:00
 permalink: critical-css-in-rails-6
 ---
 
