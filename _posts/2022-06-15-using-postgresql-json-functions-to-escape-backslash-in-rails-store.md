@@ -4,7 +4,7 @@ date:   2022-06-15 09:00:00
 permalink: using-postgresql-json-functions-to-escape-backslash-in-rails-store
 ---
 
-## Storing Rails store as JSONB
+# Storing Rails store as JSONB
 
 When using [Rails store](https://api.rubyonrails.org/classes/ActiveRecord/Store.html), we can set the data type as [plain text](https://api.rubyonrails.org/classes/ActiveRecord/Store.html) or a structure datatype like json, hstore or jsonb.
 
