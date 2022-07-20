@@ -1,6 +1,6 @@
 ---
 title:  "How To Remove Fingerprinting In Assets With Rails + Webpacker"
-date:   2021-02-16 09:00:00
+date:   2022-02-16 09:00:00
 permalink: how-to-remove-fingerprinting-in-assets-with-rails-webpacker
 ---
 
