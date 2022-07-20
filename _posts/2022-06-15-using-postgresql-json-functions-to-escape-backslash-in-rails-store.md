@@ -1,6 +1,6 @@
 ---
 title:  "Using Postgresql JSON functions to escape backslash in Rails store"
-date:   2021-06-15 09:00:00
+date:   2022-06-15 09:00:00
 permalink: using-postgresql-json-functions-to-escape-backslash-in-rails-store
 ---
 
