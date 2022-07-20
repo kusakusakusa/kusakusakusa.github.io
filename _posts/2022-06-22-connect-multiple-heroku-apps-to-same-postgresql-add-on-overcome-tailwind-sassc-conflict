@@ -4,6 +4,8 @@ date:   2022-06-22 09:00:00
 permalink: connect-multiple-heroku-apps-to-same-postgresql-add-on-overcome-tailwind-sassc-conflict
 ---
 
+# Connect Multiple Heroku Apps To Same Postgresql Add-on & Overcome Tailwind SASSC Conflict
+
 Tailwind css has a conflict with sassc gem, as stated in the [README file of their github repository](https://github.com/rails/tailwindcss-rails#conflict-with-sassc-rails).
 
 This is a problem for my application because I’m using [rails admin](https://github.com/railsadminteam/rails_admin) for my admin panel, and it needs sassc to compile its assets.
