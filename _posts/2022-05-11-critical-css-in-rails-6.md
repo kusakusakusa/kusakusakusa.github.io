@@ -4,6 +4,8 @@ date:   2022-05-11 09:00:00
 permalink: critical-css-in-rails-6
 ---
 
+# Critical CSS in Rails 6
+
 The idea here is to load the css that is precompiled by webpacker along with the html of the page so that the page can go on to load itself in a presentable appearance without having to wait for the required css to be downloaded.
 
 We are going to read the compiled css file and load it inline it in the head element of the webpage.
