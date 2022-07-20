@@ -1,6 +1,6 @@
 ---
 title:  "How To Edit A Rake Task From A Gem"
-date:   2021-05-04 09:00:00
+date:   2022-05-04 09:00:00
 permalink: how-to-edit-a-rake-task-from-a-gem
 ---
 
