@@ -4,6 +4,8 @@ date:   2022-07-20 09:00:00
 permalink: vocabulary-for-senior-developers
 ---
 
+# Vocabulary for Senior Developers
+
 ## Motivation
 
 As I progress in my career, I realise that being able to communicate your ideas and knowledge to the people around you requires you to have a good vocabulary of words. That includes the technical terms in your area of specialization.
