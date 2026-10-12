@@ -40,3 +40,6 @@ defaults:
       type: post
     values:
       tags: Other
+
+include:
+  - .well-known
